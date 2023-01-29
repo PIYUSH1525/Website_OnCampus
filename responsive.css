@@ -1,0 +1,104 @@
+@media only screen and (max-width: 1018px) {
+	.login {
+		display: none;
+	}
+	.hamburger {
+		display: block;
+		position: relative;
+		z-index: 100;
+
+		margin-left: auto;
+		margin-right: 0;
+		padding: 0 1rem;
+		user-select: none;
+		height: 100%;
+		appearance: none;
+		border: none;
+		outline: none;
+		background: black;
+		cursor: pointer;
+	}
+
+	.hamburger span {
+		display: block;
+		width: 32px;
+		height: 4px;
+		margin-bottom: 5px;
+		position: relative;
+		background-color: white;
+		border-radius: 6px;
+		z-index: 1;
+		transform-origin: 0 0;
+		transition: 0.4s;
+	}
+	.hamburger.is-active span {
+		background-color: white;
+	}
+
+	.hamburger.is-active span:nth-child(1) {
+		transform: translate(0px, -2px) rotate(45deg);
+	}
+
+	.hamburger.is-active span:nth-child(2) {
+		opacity: 0;
+		transform: translateX(15px);
+	}
+
+	.hamburger.is-active span:nth-child(3) {
+		transform: translate(-3px, 3px) rotate(-45deg);
+	}
+
+	.hamburger.is-active:hover span {
+		background-color: white;
+	}
+	.menu {
+		display: flex;
+		width: 100%;
+		height: 100vh;
+		right: 0;
+		top: 0;
+		background-color: black;
+		position: absolute;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		transform: translateX(100%);
+		transition: all 0.25s linear;
+		z-index: 9;
+		opacity: 00.57;
+	}
+
+	.menu div:nth-child(1) {
+		margin-top: 50px;
+	}
+
+	.menu div {
+		color: white;
+		margin: 10px;
+	}
+
+	.visible.menu {
+		opacity: 1;
+		transform: translateX(0%);
+		position: fixed;
+	}
+	.products {
+		justify-content: center;
+		align-items: center;
+		pointer-events: none;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.brand {
+		padding: 0 1rem;
+	}
+	.brand1 {
+		width: auto;
+	}
+	.right-side {
+		display: none;
+	}
+	.left-side {
+		min-width: none;
+	}
+}
