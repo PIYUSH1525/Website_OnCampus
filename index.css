@@ -1971,17 +1971,12 @@ body {
 	justify-content: space-between;
 	z-index: 0;
 	font-size: 14px;
+	transition: 0.5s;
 }
-.vector-icon12 {
-	position: absolute;
-	margin: 0 !important;
-	top: -1px;
-	left: -2px;
-	width: 18px;
-	height: 18px;
-	flex-shrink: 0;
-	z-index: 1;
+.collection:hover{
+	transform: translateY(-50px);
 }
+
 .image-icon {
 	position: relative;
 	border-radius: 12px;
@@ -1992,12 +1987,14 @@ body {
 	object-fit: cover;
 }
 .resource1 {
+	color: #000;
 	position: absolute;
 	top: 0;
 	left: 0;
 	font-weight: 500;
 }
 .see-how-others {
+	color: #000;
 	position: absolute;
 	top: 18px;
 	left: 0;
@@ -2019,6 +2016,7 @@ body {
 	align-items: flex-start;
 	justify-content: flex-end;
 	font-size: 14px;
+	
 }
 .resource,
 .webinar {
@@ -2028,7 +2026,15 @@ body {
 	border: 3px solid #000;
 	flex-direction: column;
 	padding: 18px 12px;
+	transition: 0.5s;
 }
+.resource:hover{
+	transform: translateY(-50px);
+}
+.webinar:hover{
+	transform: translateY(-50px);
+}
+
 .resource {
 	align-self: stretch;
 	display: flex;
@@ -2055,7 +2061,12 @@ body {
 	flex-direction: column;
 	padding: 18px 12px;
 	z-index: 4;
+	transition: 0.5s;
 }
+.e-book:hover{
+	transform: translateY(-50px);
+}
+
 .contents {
 	height: 287px;
 	flex-shrink: 0;
@@ -2389,5 +2400,5 @@ body {
 	text-align: left;
 	font-size: 24px;
 	color: #fff;
-	font-family: Syne;
+	font-family: Syne;	
 }
