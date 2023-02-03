@@ -2094,8 +2094,8 @@ body {
 }
 .slack-logo-icon {
 	position: relative;
-	width: 51.04px;
-	height: 51px;
+	width: 85px;
+	height: 85px;
 	flex-shrink: 0;
 }
 .logo {
@@ -2188,11 +2188,11 @@ body {
 }
 .facebook-icon,
 .linkedin-icon,
-.youtube-icon {
+.instagram-icon {
 	position: relative;
 	flex-shrink: 0;
 }
-.youtube-icon {
+.instagram-icon {
 	width: 25.25px;
 	height: 21.03px;
 }
@@ -2241,15 +2241,18 @@ body {
 }
 .slack-logo-icon1 {
 	position: relative;
-	width: 36.15px;
-	height: 36.13px;
+	width: 65px;
+	height: 65px;
+	left: -20px;
 	flex-shrink: 0;
 }
 .slack {
 	position: relative;
+	left: -40px;
+	font-size: 22px;
 	letter-spacing: 0.06em;
-	font-weight: 800;
-	text-shadow: 2px 2px 0#000, 1px 1px 0#000;
+	font-weight: 200;
+	text-shadow: 1px 1px 0#000, 1px 1px 0#000;
 	-webkit-text-stroke: 2px #000;
 }
 .brand,
