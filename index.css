@@ -1,6 +1,33 @@
 body {
 	margin: 0;
 	line-height: normal;
+	box-sizing: border-box;
+}
+
+.navigation {
+	background-color: #fff;
+	overflow: hidden;
+}
+.navigation {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	border-bottom: 2px solid #000;
+	box-sizing: border-box;
+	width: 100%;
+	height: 72px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 16px;
+	color: #000;
+}
+
+.navigation {
+	background-color: #fff;
+	overflow: hidden;
 }
 .great-teamwork-starts {
 	font-weight: 600;
@@ -2198,7 +2225,6 @@ body {
 	color: #000;
 }
 .footer {
-	height: 444px;
 	font-size: 14px;
 }
 .slack-logo-icon1 {
@@ -2333,34 +2359,4 @@ body {
 	align-items: center;
 	justify-content: flex-start;
 	color: #fff;
-}
-.navigation,
-.slack-landing {
-	background-color: #fff;
-	overflow: hidden;
-}
-.navigation {
-	position: fixed;
-	z-index: 999;
-	top: 0;
-	left: 0;
-	border-bottom: 2px solid #000;
-	box-sizing: border-box;
-	width: 100%;
-	height: 72px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	font-size: 16px;
-	color: #000;
-}
-.slack-landing {
-	position: relative;
-	width: 100%;
-	height: 4226px;
-	text-align: left;
-	font-size: 24px;
-	color: #fff;
-	font-family: Syne;
 }
