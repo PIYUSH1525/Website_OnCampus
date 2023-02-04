@@ -1799,7 +1799,7 @@ body {
 	position: absolute;
 	top: 2330px;
 	left: 0;
-	width: 1440px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	padding: 70px 0;
