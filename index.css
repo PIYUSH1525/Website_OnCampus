@@ -1985,17 +1985,12 @@ body {
 	justify-content: space-between;
 	z-index: 0;
 	font-size: 14px;
+	transition: 0.5s;
 }
-.vector-icon12 {
-	position: absolute;
-	margin: 0 !important;
-	top: -1px;
-	left: -2px;
-	width: 18px;
-	height: 18px;
-	flex-shrink: 0;
-	z-index: 1;
+.collection:hover {
+	transform: translateY(-50px);
 }
+
 .image-icon {
 	position: relative;
 	border-radius: 12px;
@@ -2006,12 +2001,14 @@ body {
 	object-fit: cover;
 }
 .resource1 {
+	color: #000;
 	position: absolute;
 	top: 0;
 	left: 0;
 	font-weight: 500;
 }
 .see-how-others {
+	color: #000;
 	position: absolute;
 	top: 18px;
 	left: 0;
@@ -2042,7 +2039,15 @@ body {
 	border: 3px solid #000;
 	flex-direction: column;
 	padding: 18px 12px;
+	transition: 0.5s;
 }
+.resource:hover {
+	transform: translateY(-50px);
+}
+.webinar:hover {
+	transform: translateY(-50px);
+}
+
 .resource {
 	align-self: stretch;
 	display: flex;
@@ -2069,7 +2074,12 @@ body {
 	flex-direction: column;
 	padding: 18px 12px;
 	z-index: 4;
+	transition: 0.5s;
 }
+.e-book:hover {
+	transform: translateY(-50px);
+}
+
 .contents {
 	height: 287px;
 	flex-shrink: 0;
@@ -2094,8 +2104,8 @@ body {
 }
 .slack-logo-icon {
 	position: relative;
-	width: 51.04px;
-	height: 51px;
+	width: 85px;
+	height: 85px;
 	flex-shrink: 0;
 }
 .logo {
@@ -2185,11 +2195,11 @@ body {
 }
 .facebook-icon,
 .linkedin-icon,
-.youtube-icon {
+.instagram-icon {
 	position: relative;
 	flex-shrink: 0;
 }
-.youtube-icon {
+.instagram-icon {
 	width: 25.25px;
 	height: 21.03px;
 }
@@ -2229,15 +2239,18 @@ body {
 }
 .slack-logo-icon1 {
 	position: relative;
-	width: 36.15px;
-	height: 36.13px;
+	width: 65px;
+	height: 65px;
+	left: -20px;
 	flex-shrink: 0;
 }
 .slack {
 	position: relative;
+	left: -40px;
+	font-size: 22px;
 	letter-spacing: 0.06em;
-	font-weight: 800;
-	text-shadow: 2px 2px 0#000, 1px 1px 0#000;
+	font-weight: 200;
+	text-shadow: 1px 1px 0#000, 1px 1px 0#000;
 	-webkit-text-stroke: 2px #000;
 }
 .brand,
@@ -2359,4 +2372,34 @@ body {
 	align-items: center;
 	justify-content: flex-start;
 	color: #fff;
+}
+.navigation,
+.slack-landing {
+	background-color: #fff;
+	overflow: hidden;
+}
+.navigation {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	border-bottom: 2px solid #000;
+	box-sizing: border-box;
+	width: 100%;
+	height: 72px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 16px;
+	color: #000;
+}
+.slack-landing {
+	position: relative;
+	width: 100%;
+	height: 4226px;
+	text-align: left;
+	font-size: 24px;
+	color: #fff;
+	font-family: Syne;
 }
