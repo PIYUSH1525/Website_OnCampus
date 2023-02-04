@@ -1552,6 +1552,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding: 42px 0;
+	width: 100%;
 	align-items: flex-start;
 	justify-content: flex-start;
 	background-image: url(./public/features@3x.png);
