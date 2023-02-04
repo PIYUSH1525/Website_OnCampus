@@ -808,7 +808,7 @@ body {
 	position: absolute;
 	top: 718px;
 	left: 0;
-	width: 1440px;
+	width: 100%;
 	height: 370px;
 	display: flex;
 	flex-direction: column;
