@@ -1068,7 +1068,7 @@ body {
 	z-index: 1;
 }
 .channels {
-	width: 1440px;
+	width: 100%;
 	height: 386px;
 	flex-shrink: 0;
 	display: flex;
@@ -1377,7 +1377,7 @@ body {
 	z-index: 1;
 }
 .audio {
-	width: 1440px;
+	width: 100%;
 	height: 386px;
 	flex-shrink: 0;
 	display: flex;
