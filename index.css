@@ -1,30 +1,121 @@
 body {
 	margin: 0;
 	line-height: normal;
+	box-sizing: border-box;
 }
-.great-teamwork-starts {
-	font-weight: 600;
+
+* {
+	color: #fff;
+	font-family: Syne;
+	box-sizing: border-box;
 }
-.with-a {
-	font-size: 32px;
+
+.navigation {
+	background-color: #fff;
+	overflow: hidden;
+}
+.navigation {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	border-bottom: 2px solid #000;
+	box-sizing: border-box;
+	width: 100vw;
+	height: 72px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 16px;
+	color: #000;
+}
+
+.navLogo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.3rem;
+	padding: 0 1rem;
+	border-right: 2px solid #000;
+	font-size: 18px;
+	font-family: "Druk Wide Trial";
+}
+
+.navLogo > img {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.navLogo > p {
+	font-size: 22px;
 	letter-spacing: 0.06em;
-	font-weight: 800;
-	color: #ffc700;
+	font-weight: 200;
+	text-shadow: 1px 1px 0#000, 1px 1px 0#000;
+	-webkit-text-stroke: 2px #000;
 }
-.great-teamwork-starts-container {
+.menu {
 	align-self: stretch;
-	position: relative;
-	line-height: 120%;
-	display: inline-block;
-	flex-shrink: 0;
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	padding: 0 12px;
+	padding-left: 2rem;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 12px;
 }
-.with-all-your-container {
+
+.login {
 	align-self: stretch;
-	position: relative;
-	font-size: 21px;
-	line-height: 150%;
-	text-align: justify;
+	background-color: #000;
+	display: flex;
+	flex-direction: row;
+	padding: 0 12px;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
 }
+
+.hero {
+	padding-top: 72px;
+	border-bottom: 2px solid #000;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 38px;
+}
+
+.hero-left {
+	display: flex;
+	align-items: flex-start;
+	height: calc(100vh - 72px);
+	background-color: #74247a;
+	border-right: 2px solid #000;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	width: 100%;
+	gap: 62px;
+	min-width: 30rem;
+}
+
+.hero-right {
+	width: 100%;
+	height: calc(100vh - 72px);
+	position: relative;
+	background-color: #ffc700;
+	overflow: hidden;
+	font-size: 13.31px;
+	color: #000;
+}
+
 .hero-texts {
 	display: flex;
 	flex-direction: column;
@@ -32,7 +123,49 @@ body {
 	justify-content: flex-start;
 	gap: 48px;
 }
-.blue,
+
+.hero-heading1 {
+	font-weight: 600;
+}
+.hero-heading2 {
+	font-size: 32px;
+	letter-spacing: 0.06em;
+	font-weight: 800;
+	color: #ffc700;
+}
+
+.hero-subheading {
+	font-size: 21px;
+	text-align: justify;
+}
+
+.hero-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 26px;
+	font-size: 18px;
+}
+
+.joinusbutton {
+	border-radius: 14px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	position: relative;
+}
+.button-frame {
+	border-radius: 14px;
+	display: flex;
+	background-color: #000;
+	padding: 14px 24px;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	z-index: 2;
+}
+
 .purple {
 	position: absolute;
 	margin: 0 !important;
@@ -43,22 +176,11 @@ body {
 	bottom: -2%;
 	left: -1px;
 	border-radius: 14px;
-	background-color: #96def9;
 	border: 2px solid #000;
-	box-sizing: border-box;
+	background-color: #d26eda;
 	z-index: 0;
 }
-.purple {
-	height: 102%;
-	width: calc(100% + 1px);
-	top: -1%;
-	right: -0.5px;
-	bottom: -1%;
-	left: -0.5px;
-	background-color: #d26eda;
-	border: 1px solid #000;
-	z-index: 1;
-}
+
 .left-button-icon {
 	position: relative;
 	width: 18px;
@@ -69,26 +191,9 @@ body {
 }
 .button {
 	position: relative;
+	color: black;
 }
-.button-frame,
-.email-signup {
-	border-radius: 14px;
-	display: flex;
-	flex-direction: row;
-}
-.button-frame {
-	background-color: #000;
-	padding: 14px 24px;
-	align-items: center;
-	justify-content: center;
-	gap: 4px;
-	z-index: 2;
-}
-.email-signup {
-	align-items: flex-start;
-	justify-content: flex-start;
-	position: relative;
-}
+
 .black {
 	position: absolute;
 	margin: 0 !important;
@@ -141,24 +246,7 @@ body {
 	display: flex;
 	align-items: flex-start;
 }
-.buttons {
-	flex-direction: row;
-	justify-content: flex-start;
-	gap: 26px;
-	font-size: 18px;
-}
-.left-side {
-	min-width: 30rem;
-	align-self: stretch;
-	flex: 1;
-	background-color: #74247a;
-	border-right: 2px solid #000;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 1rem;
-	gap: 62px;
-}
+
 .shadowdesktop,
 .shadowiphone-icon {
 	position: absolute;
@@ -729,30 +817,7 @@ body {
 	width: 219px;
 	height: 137px;
 }
-.right-side {
-	align-self: stretch;
-	flex: 1;
-	position: relative;
-	background-color: #ffc700;
-	overflow: hidden;
-	font-size: 13.31px;
-	color: #000;
-}
-.hero {
-	position: absolute;
-	top: 72px;
-	left: 0;
-	border-bottom: 2px solid #000;
-	box-sizing: border-box;
-	width: 100%;
-	height: 646px;
-	overflow: hidden;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	justify-content: flex-start;
-	font-size: 38px;
-}
+
 .all-over-the {
 	letter-spacing: 0.02em;
 	font-weight: 800;
@@ -805,10 +870,7 @@ body {
 	z-index: 3;
 }
 .companies {
-	position: absolute;
-	top: 718px;
-	left: 0;
-	width: 1440px;
+	width: 100%;
 	height: 370px;
 	display: flex;
 	flex-direction: column;
@@ -1068,7 +1130,7 @@ body {
 	z-index: 1;
 }
 .channels {
-	width: 1440px;
+	width: 100%;
 	height: 386px;
 	flex-shrink: 0;
 	display: flex;
@@ -1377,7 +1439,7 @@ body {
 	z-index: 1;
 }
 .audio {
-	width: 1440px;
+	width: 100%;
 	height: 386px;
 	flex-shrink: 0;
 	display: flex;
@@ -1546,12 +1608,10 @@ body {
 	z-index: 1;
 }
 .features {
-	position: absolute;
-	top: 1088px;
-	left: 0;
 	display: flex;
 	flex-direction: column;
 	padding: 42px 0;
+	width: 100%;
 	align-items: flex-start;
 	justify-content: flex-start;
 	background-image: url(./public/features@3x.png);
@@ -1795,10 +1855,7 @@ body {
 	color: #ffc700;
 }
 .promo {
-	position: absolute;
-	top: 2330px;
-	left: 0;
-	width: 1440px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	padding: 70px 0;
@@ -1911,10 +1968,7 @@ body {
 	z-index: 2;
 }
 .testimonial {
-	position: absolute;
-	top: 2842px;
-	left: 0;
-	width: 1440px;
+	width: 100%;
 	height: 414px;
 	flex-direction: row;
 	padding: 0 230px;
@@ -1973,7 +2027,7 @@ body {
 	font-size: 14px;
 	transition: 0.5s;
 }
-.collection:hover{
+.collection:hover {
 	transform: translateY(-50px);
 }
 
@@ -2016,7 +2070,6 @@ body {
 	align-items: flex-start;
 	justify-content: flex-end;
 	font-size: 14px;
-	
 }
 .resource,
 .webinar {
@@ -2028,10 +2081,10 @@ body {
 	padding: 18px 12px;
 	transition: 0.5s;
 }
-.resource:hover{
+.resource:hover {
 	transform: translateY(-50px);
 }
-.webinar:hover{
+.webinar:hover {
 	transform: translateY(-50px);
 }
 
@@ -2063,7 +2116,7 @@ body {
 	z-index: 4;
 	transition: 0.5s;
 }
-.e-book:hover{
+.e-book:hover {
 	transform: translateY(-50px);
 }
 
@@ -2076,10 +2129,7 @@ body {
 	color: #000;
 }
 .articles {
-	position: absolute;
-	top: 3256px;
-	left: 0;
-	width: 1440px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	padding: 70px 230px;
@@ -2129,12 +2179,9 @@ body {
 	gap: 18px;
 }
 .footer-nav {
-	position: absolute;
-	top: 0;
-	left: 0;
 	background-color: #74247a;
 	border-top: 2px solid #000;
-	width: 1440px;
+	width: 100%;
 	flex-direction: row;
 	padding: 42px 230px;
 	justify-content: space-between;
@@ -2214,14 +2261,7 @@ body {
 	align-items: center;
 	gap: 18px;
 }
-.footer,
 .footer1 {
-	position: absolute;
-	left: 0;
-	width: 1440px;
-}
-.footer1 {
-	top: 370px;
 	background-color: #ffc700;
 	border-top: 2px solid #000;
 	box-sizing: border-box;
@@ -2235,8 +2275,6 @@ body {
 	color: #000;
 }
 .footer {
-	top: 3782px;
-	height: 444px;
 	font-size: 14px;
 }
 .slack-logo-icon1 {
@@ -2255,25 +2293,7 @@ body {
 	text-shadow: 1px 1px 0#000, 1px 1px 0#000;
 	-webkit-text-stroke: 2px #000;
 }
-.brand,
-.brand1 {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-start;
-}
-.brand1 {
-	width: 127px;
-	flex-shrink: 0;
-	gap: 10px;
-}
-.brand {
-	align-self: stretch;
-	border-right: 2px solid #000;
-	padding: 0 24px;
-	font-size: 18px;
-	font-family: "Druk Wide Trial";
-}
+
 .icon-left {
 	position: relative;
 	width: 18px;
@@ -2297,29 +2317,7 @@ body {
 	overflow: hidden;
 	z-index: 2;
 }
-.products-child {
-	position: absolute;
-	margin: 0 !important;
-	height: calc(100% - 70px);
-	width: calc(100% - 78.75px);
-	top: 56.72px;
-	right: 68px;
-	bottom: 13.28px;
-	left: 10.75px;
-	border-top: 2px solid transparent;
-	box-sizing: border-box;
-	z-index: 3;
-}
-.products {
-	align-self: stretch;
-	display: flex;
-	flex-direction: row;
-	padding: 0 12px;
-	align-items: center;
-	justify-content: flex-start;
-	position: relative;
-	gap: 6px;
-}
+
 .icon-right1 {
 	position: relative;
 	width: 18px;
@@ -2329,79 +2327,16 @@ body {
 	display: none;
 	z-index: 2;
 }
-.menu {
-	align-self: stretch;
-	flex: 1;
-	display: flex;
-	flex-direction: row;
-	padding: 0 12px;
-	align-items: center;
-	justify-content: flex-start;
-	gap: 12px;
-}
+
 .text5 {
 	position: relative;
 	letter-spacing: 0.06em;
 	font-weight: 500;
 	display: none;
 }
-.search,
-.search1 {
-	align-self: stretch;
-	display: flex;
-	flex-direction: row;
-	padding: 0 12px;
-	align-items: center;
-	justify-content: flex-start;
-}
-.search1 {
-	gap: 6px;
-}
-.search {
-	border-left: 2px solid #000;
-}
+
 .text6 {
 	position: relative;
 	letter-spacing: 0.06em;
 	font-weight: 500;
-}
-.login {
-	align-self: stretch;
-	background-color: #000;
-	display: flex;
-	flex-direction: row;
-	padding: 0 12px;
-	align-items: center;
-	justify-content: flex-start;
-	color: #fff;
-}
-.navigation,
-.slack-landing {
-	background-color: #fff;
-	overflow: hidden;
-}
-.navigation {
-	position: fixed;
-	z-index: 999;
-	top: 0;
-	left: 0;
-	border-bottom: 2px solid #000;
-	box-sizing: border-box;
-	width: 100%;
-	height: 72px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	font-size: 16px;
-	color: #000;
-}
-.slack-landing {
-	position: relative;
-	width: 100%;
-	height: 4226px;
-	text-align: left;
-	font-size: 24px;
-	color: #fff;
-	font-family: Syne;	
 }
