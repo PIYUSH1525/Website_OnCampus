@@ -92,6 +92,24 @@
 		display: none;
 	}
 	.hero-left {
-		min-width: none;
+		min-width: 0;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	.box {
+		flex-direction: column;
+	}
+	.box1 {
+		flex-direction: column-reverse;
+	}
+	.content,
+	.content1 {
+		border-left: none;
+		border-right: none;
+		border-top: 1px solid black;
+	}
+	.testimonial {
+		flex-direction: column;
 	}
 }
