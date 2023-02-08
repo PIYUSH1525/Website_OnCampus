@@ -300,6 +300,9 @@ body {
 	position: relative;
 	line-height: 150%;
 }
+.announcements span {
+	color: #000;
+}
 .frame-child,
 .frame-inner,
 .frame-item {
@@ -368,8 +371,13 @@ body {
 	flex-shrink: 0;
 }
 .what-a-fantastic {
+	color: #000;
 	margin-block-start: 0;
 	margin-block-end: 0;
+}
+
+.what-a-fantastic > b {
+	color: #000;
 }
 .sharing-few-highlights {
 	margin: 0;
@@ -518,6 +526,7 @@ body {
 	width: 7.85px;
 	height: 11.43px;
 	flex-shrink: 0;
+	display: none;
 }
 .vector-parent {
 	position: absolute;
@@ -749,6 +758,7 @@ body {
 }
 .vector-icon1,
 .vector-icon2 {
+	display: none;
 	position: absolute;
 	top: calc(50% - 137.96px);
 	left: calc(50% + 271.54px);
@@ -756,6 +766,7 @@ body {
 	height: 55.58px;
 }
 .vector-icon2 {
+	display: none;
 	top: calc(50% + 94.5px);
 	left: calc(50% - 340.13px);
 	width: 78.13px;
@@ -763,6 +774,7 @@ body {
 }
 .star-purple-icon,
 .vector-icon3 {
+	display: none;
 	position: absolute;
 	top: calc(50% - 219px);
 	left: calc(50% - 335px);
@@ -770,6 +782,7 @@ body {
 	height: 96.37px;
 }
 .vector-icon3 {
+	display: none;
 	top: calc(50% - 254.8px);
 	left: calc(50% + 275.38px);
 	width: 65.84px;
@@ -777,6 +790,7 @@ body {
 }
 .vector-icon4,
 .vector-icon5 {
+	display: none;
 	position: absolute;
 	top: calc(50% - 223.19px);
 	left: calc(50% + 333px);
@@ -791,6 +805,7 @@ body {
 }
 .vector-icon6,
 .vector-icon7 {
+	display: none;
 	position: absolute;
 	top: calc(50% - 34.87px);
 	left: calc(50% + 298.46px);
@@ -821,12 +836,14 @@ body {
 .all-over-the {
 	letter-spacing: 0.02em;
 	font-weight: 800;
+	color: #000;
 }
 .all-over-the-world {
 	margin: 0;
 	font-size: 24px;
 }
 .trusted-by-companies-container {
+	color: #000;
 	position: relative;
 	line-height: 150%;
 	z-index: 0;
@@ -844,8 +861,9 @@ body {
 .logos {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
-	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 	gap: 82px;
 	z-index: 1;
 }
@@ -854,6 +872,7 @@ body {
 	position: absolute;
 	margin: 0 !important;
 	flex-shrink: 0;
+	display: none;
 }
 .vector-icon8 {
 	top: 42.7px;
@@ -871,7 +890,6 @@ body {
 }
 .companies {
 	width: 100%;
-	height: 370px;
 	display: flex;
 	flex-direction: column;
 	padding: 70px 0;
@@ -1049,10 +1067,16 @@ body {
 	width: 552px;
 	height: 264px;
 }
-.motion {
+.motion,
+.motion1,
+.motion2 {
+	font-size: 2rem;
 	align-self: stretch;
-	flex: 1;
 	position: relative;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .at-the-heart,
 .bring-your-team {
@@ -1060,7 +1084,7 @@ body {
 	letter-spacing: 0.02em;
 	line-height: 150%;
 	display: inline-block;
-	width: 457px;
+	color: #000;
 }
 .at-the-heart {
 	font-size: 16px;
@@ -1080,6 +1104,7 @@ body {
 	font-weight: 500;
 }
 .box,
+.box1,
 .button-secondary,
 .content {
 	display: flex;
@@ -1092,20 +1117,29 @@ body {
 	position: relative;
 	font-size: 16px;
 }
-.box,
-.content {
-	align-self: stretch;
-	flex: 1;
-}
+
 .content {
 	border-left: 2px solid #000;
 	overflow: hidden;
 	flex-direction: column;
-	padding: 28px 64px;
+	padding: 0.5rem;
 	justify-content: center;
 	gap: 24px;
 	font-size: 21px;
 	color: #000;
+}
+.box1 {
+	border-radius: 14px;
+	background-color: #fff;
+	box-shadow: 5px 5px 0#000, 4px 4px 0#000, 3px 3px 0#000, 2px 2px 0#000,
+		1px 1px 0#000;
+	border: 4px solid #000;
+	flex-direction: row;
+	padding: 10px;
+	justify-content: flex-start;
+	gap: 10px;
+	z-index: 0;
+	max-width: 50rem;
 }
 .box {
 	border-radius: 14px;
@@ -1118,6 +1152,7 @@ body {
 	justify-content: flex-start;
 	gap: 10px;
 	z-index: 0;
+	max-width: 50rem;
 }
 .line-icon1 {
 	position: absolute;
@@ -1128,6 +1163,7 @@ body {
 	height: 108px;
 	flex-shrink: 0;
 	z-index: 1;
+	display: none;
 }
 .channels {
 	width: 100%;
@@ -1149,7 +1185,7 @@ body {
 	font-weight: 500;
 	text-align: justify;
 	display: inline-block;
-	width: 457px;
+	color: #000;
 }
 .content1 {
 	align-self: stretch;
@@ -1158,7 +1194,7 @@ body {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	padding: 28px 64px;
+	padding: 0.5rem;
 	align-items: flex-start;
 	justify-content: center;
 	gap: 24px;
@@ -1411,7 +1447,7 @@ body {
 }
 .green {
 	top: 23px;
-	left: 43px;
+	right: 43px;
 	border-radius: 200px 0 0 200px;
 	background-color: #5cf1a4;
 	box-shadow: -5px 5px 0#000, -4px 4px 0#000, -3px 3px 0#000, -2px 2px 0#000,
@@ -1421,14 +1457,9 @@ body {
 	width: 552px;
 	height: 264px;
 }
-.motion1 {
-	align-self: stretch;
-	flex: 1;
-	position: relative;
-	font-size: 10.99px;
-	color: #fff;
-}
+
 .vector-icon9 {
+	display: none;
 	position: absolute;
 	margin: 0 !important;
 	top: calc(50% + 42.14px);
@@ -1595,9 +1626,10 @@ body {
 	position: relative;
 	line-height: 150%;
 	display: inline-block;
-	width: 457px;
+	color: #000;
 }
 .vector-icon10 {
+	display: none;
 	position: absolute;
 	margin: 0 !important;
 	top: 269.79px;
@@ -1610,10 +1642,11 @@ body {
 .features {
 	display: flex;
 	flex-direction: column;
-	padding: 42px 0;
+	padding: 42px 1rem;
+	gap: 1rem;
 	width: 100%;
-	align-items: flex-start;
-	justify-content: flex-start;
+	align-items: center;
+	justify-content: center;
 	background-image: url(./public/features@3x.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1634,9 +1667,9 @@ body {
 }
 .header {
 	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	gap: 10px;
 }
 .slack-securely-scales {
@@ -1645,6 +1678,7 @@ body {
 	font-size: 18px;
 	line-height: 150%;
 	font-weight: 600;
+	color: #000;
 }
 .buttons1,
 .content3 {
@@ -1653,7 +1687,6 @@ body {
 	font-family: Syne;
 }
 .content3 {
-	width: 589px;
 	flex-direction: column;
 	align-items: center;
 	gap: 12px;
@@ -1691,6 +1724,7 @@ body {
 	gap: 3.06px;
 	z-index: 2;
 	font-size: 9.96px;
+	display: none;
 }
 .locked-icon {
 	position: relative;
@@ -1714,6 +1748,7 @@ body {
 	gap: 4.79px;
 	z-index: 3;
 	font-size: 15.57px;
+	display: none;
 }
 .love-you-icon {
 	position: relative;
@@ -1737,6 +1772,7 @@ body {
 	justify-content: flex-start;
 	gap: 3.56px;
 	z-index: 4;
+	display: none;
 }
 .framed3 {
 	left: 326.05px;
@@ -1764,6 +1800,7 @@ body {
 	gap: 4.17px;
 	z-index: 6;
 	font-size: 13.54px;
+	display: none;
 }
 .briefcase-icon {
 	position: relative;
@@ -1773,6 +1810,7 @@ body {
 }
 .framed5,
 .fx-icon {
+	display: none;
 	position: absolute;
 	margin: 0 !important;
 }
@@ -1790,6 +1828,7 @@ body {
 	gap: 3.42px;
 	z-index: 7;
 	font-size: 11.11px;
+	display: none;
 }
 .fx-icon {
 	top: 49.26px;
@@ -1847,9 +1886,11 @@ body {
 	color: #69d3fa;
 }
 .statistics {
-	width: 718px;
+	gap: 2rem;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
 	z-index: 9;
 	font-size: 54px;
 	color: #ffc700;
@@ -1868,6 +1909,7 @@ body {
 	font-family: Karla;
 }
 .vector-icon11 {
+	display: none;
 	position: absolute;
 	margin: 0 !important;
 	top: -2.82px;
@@ -1884,8 +1926,7 @@ body {
 	flex-shrink: 0;
 	overflow: hidden;
 }
-.play-wrapper,
-.video-inner {
+.play-wrapper {
 	position: absolute;
 	overflow: hidden;
 }
@@ -1906,28 +1947,20 @@ body {
 	align-items: flex-start;
 	justify-content: flex-start;
 }
-.video-inner {
-	height: 100%;
-	top: 0;
-	bottom: 0;
-	left: calc(50% - 167px);
-	border-radius: 200px 200px 0 0;
-	width: 333px;
-	background-image: url(./public/frame-50@3x.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top;
-}
-.video,
 .we-were-able {
 	align-self: stretch;
 	position: relative;
+	color: #000;
 }
 .video {
-	width: 412px;
-	flex-shrink: 0;
-	overflow: hidden;
 	z-index: 1;
+	color: #000;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 1.5rem;
 }
 .we-were-able {
 	line-height: 150%;
@@ -1936,6 +1969,9 @@ body {
 .senior-technical-product-manag {
 	margin: 0;
 	font-size: 18px;
+}
+.senior-technical-product-manag span {
+	color: #000;
 }
 .mark-smith-senior-container {
 	align-self: stretch;
@@ -1958,9 +1994,7 @@ body {
 	align-items: flex-start;
 }
 .content4 {
-	align-self: stretch;
-	flex: 1;
-	overflow: hidden;
+	width: 100%;
 	flex-direction: column;
 	padding: 24px 12px;
 	justify-content: center;
@@ -1968,12 +2002,14 @@ body {
 	z-index: 2;
 }
 .testimonial {
+	border-top: 1px solid black;
 	width: 100%;
-	height: 414px;
+	margin: 2rem 0;
 	flex-direction: row;
-	padding: 0 230px;
+	padding: 0 1rem;
 	box-sizing: border-box;
-	justify-content: flex-start;
+	justify-content: center;
+	align-items: center;
 	text-align: justify;
 	color: #000;
 }
@@ -2121,9 +2157,12 @@ body {
 }
 
 .contents {
-	height: 287px;
+	align-items: center;
+	justify-content: space-evenly;
 	flex-shrink: 0;
 	flex-direction: row;
+	gap: 0.75rem;
+	flex-wrap: wrap-reverse;
 	position: relative;
 	font-size: 12px;
 	color: #000;
@@ -2132,10 +2171,12 @@ body {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	padding: 70px 230px;
+	padding: 1rem;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
 	box-sizing: border-box;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
 	gap: 70px;
 	background-image: url(./public/articles@3x.png);
 	background-size: cover;
@@ -2168,7 +2209,7 @@ body {
 	box-sizing: border-box;
 	overflow: hidden;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 }
 .why-slack {
 	width: 140px;
@@ -2183,8 +2224,16 @@ body {
 	border-top: 2px solid #000;
 	width: 100%;
 	flex-direction: row;
-	padding: 42px 230px;
-	justify-content: space-between;
+	padding: 42px 1rem;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.mycustom {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 .status {
 	position: relative;
@@ -2213,6 +2262,8 @@ body {
 	padding: 4px 0;
 	align-items: center;
 	gap: 18px;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .download-slack {
 	border-radius: 12px;
@@ -2268,9 +2319,11 @@ body {
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
-	padding: 24px 230px;
+	padding: 24px 1rem;
+	flex-wrap: wrap-reverse;
+	gap: 1rem;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	font-size: 12px;
 	color: #000;
 }
