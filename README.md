@@ -129,6 +129,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/OnCampus-Com
 
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+[We Dont Do That Here Black Panther GIF](https://tenor.com/view/we-dont-do-that-here-black-panther-tchalla-bruce-gif-16558003)from [We Dont Do That Here GIFs](https://tenor.com/search/we+dont+do+that+here-gifs)
