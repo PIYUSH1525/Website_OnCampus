@@ -1132,28 +1132,26 @@ body {
 .box1 {
 	border-radius: 14px;
 	background-color: #fff;
-	box-shadow: 5px 5px 0#000, 4px 4px 0#000, 3px 3px 0#000, 2px 2px 0#000,
-		1px 1px 0#000;
+	box-shadow: 5px 5px 0#000, 4px 4px 0#000, 3px 3px 0#000, 2px 2px 0#000,1px 1px 0#000;
 	border: 4px solid #000;
 	flex-direction: row;
 	padding: 10px;
 	justify-content: flex-start;
 	gap: 10px;
 	z-index: 0;
-	max-width: 50rem;
+	max-width: 75rem;
 }
 .box {
 	border-radius: 14px;
 	background-color: #fff;
-	box-shadow: 5px 5px 0#000, 4px 4px 0#000, 3px 3px 0#000, 2px 2px 0#000,
-		1px 1px 0#000;
+	box-shadow: 5px 5px 0#000, 4px 4px 0#000, 3px 3px 0#000, 2px 2px 0#000,1px 1px 0#000;
 	border: 4px solid #000;
 	flex-direction: row;
 	padding: 10px;
 	justify-content: flex-start;
 	gap: 10px;
 	z-index: 0;
-	max-width: 50rem;
+	max-width: 75rem;
 }
 .line-icon1 {
 	position: absolute;
@@ -1654,7 +1652,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding: 42px 1rem;
-	gap: 1rem;
+	gap: 2.3rem;
 	width: 100%;
 	align-items: center;
 	justify-content: center;
