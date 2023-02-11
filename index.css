@@ -1100,6 +1100,7 @@ body {
 	gap: 18px;
 }
 .button2 {
+	color: #000;
 	position: relative;
 	font-weight: 500;
 }
@@ -1187,6 +1188,16 @@ body {
 	display: inline-block;
 	color: #000;
 }
+.crew{
+	font-size:20px;
+	position: relative;
+	letter-spacing: 0.02em;
+	line-height: 150%;
+	display: inline-block;
+	color: #000;	
+}
+
+
 .content1 {
 	align-self: stretch;
 	flex: 1;
