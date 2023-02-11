@@ -2025,7 +2025,7 @@ body {
 	color: #000;
 }
 .deeper-dive {
-	font-weight: 800;
+	font-weight: 800;n1
 	color: #ffc700;
 }
 .take-a-deeper-container {
@@ -2129,10 +2129,18 @@ body {
 	transition: 0.5s;
 }
 .resource:hover {
-	transform: translateY(-50px);
+	background-color: #ffc700;
+	color: #000;
+	cursor: pointer;
+	transform: scale(1.03);
+	
+	
 }
 .webinar:hover {
-	transform: translateY(-50px);
+	background-color: #ffc700;
+	color: #000;
+	cursor: pointer;
+	transform: scale(1.03);
 }
 
 .resource {
@@ -2164,7 +2172,10 @@ body {
 	transition: 0.5s;
 }
 .e-book:hover {
-	transform: translateY(-50px);
+	background-color: #ffc700;
+	color: #000;
+	cursor: pointer;
+	transform: scale(1.03);
 }
 
 .contents {
