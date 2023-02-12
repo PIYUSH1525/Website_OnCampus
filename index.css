@@ -55,7 +55,7 @@ body {
 	text-shadow: 1px 1px 0#000, 1px 1px 0#000;
 	-webkit-text-stroke: 2px #000;
 }
-.menu {
+/* .menu {
 	align-self: stretch;
 	flex: 1;
 	display: flex;
@@ -65,7 +65,7 @@ body {
 	align-items: center;
 	justify-content: flex-start;
 	gap: 12px;
-}
+} */
 
 .login {
 	align-self: stretch;
@@ -130,12 +130,12 @@ body {
 .hero-heading1 {
 	font-weight: 600;
 }
-.hero-heading2 {
+/* .hero-heading2 {
 	font-size: 32px;
 	letter-spacing: 0.06em;
 	font-weight: 800;
 	color: #ffc700;
-}
+} */
 
 .hero-subheading {
 	font-size: 21px;
@@ -184,7 +184,7 @@ body {
 	z-index: 0;
 }
 
-.left-button-icon {
+/* .left-button-icon {
 	position: relative;
 	width: 18px;
 	height: 18px;
@@ -234,11 +234,11 @@ body {
 	justify-content: center;
 	gap: 6px;
 	z-index: 1;
-}
+} */
 .hamburger {
 	display: none;
 }
-.google-signup {
+/* .google-signup {
 	justify-content: flex-start;
 	position: relative;
 	color: #000;
@@ -248,7 +248,7 @@ body {
 .left-side {
 	display: flex;
 	align-items: flex-start;
-}
+} */
 
 .shadowdesktop,
 .shadowiphone-icon {
@@ -841,17 +841,17 @@ body {
 	font-weight: 800;
 	color: #000;
 }
-.all-over-the-world {
+/* .all-over-the-world {
 	margin: 0;
 	font-size: 24px;
-}
-.trusted-by-companies-container {
+} */
+/* .trusted-by-companies-container {
 	color: #000;
 	position: relative;
 	line-height: 150%;
 	z-index: 0;
-}
-.airbnb-icon,
+} */
+/* .airbnb-icon,
 .nasa-icon {
 	position: relative;
 	width: 74px;
@@ -869,8 +869,8 @@ body {
 	justify-content: center;
 	gap: 82px;
 	z-index: 1;
-}
-.line-icon,
+} */
+/* .line-icon,
 .vector-icon8 {
 	position: absolute;
 	margin: 0 !important;
@@ -903,7 +903,7 @@ body {
 	text-align: center;
 	font-size: 34px;
 	color: #000;
-}
+} */
 .channel-animation-child {
 	position: absolute;
 	width: calc(100% - 3.95px);
