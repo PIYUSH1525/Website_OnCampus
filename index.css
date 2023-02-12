@@ -838,17 +838,17 @@ body {
 	font-weight: 800;
 	color: #000;
 }
-.all-over-the-world {
+/* .all-over-the-world {
 	margin: 0;
 	font-size: 24px;
-}
-.trusted-by-companies-container {
+} */
+/* .trusted-by-companies-container {
 	color: #000;
 	position: relative;
 	line-height: 150%;
 	z-index: 0;
-}
-.airbnb-icon,
+} */
+/* .airbnb-icon,
 .nasa-icon {
 	position: relative;
 	width: 74px;
@@ -866,8 +866,8 @@ body {
 	justify-content: center;
 	gap: 82px;
 	z-index: 1;
-}
-.line-icon,
+} */
+/* .line-icon,
 .vector-icon8 {
 	position: absolute;
 	margin: 0 !important;
@@ -900,7 +900,7 @@ body {
 	text-align: center;
 	font-size: 34px;
 	color: #000;
-}
+} */
 .channel-animation-child {
 	position: absolute;
 	width: calc(100% - 3.95px);
