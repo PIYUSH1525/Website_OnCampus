@@ -110,7 +110,10 @@ body {
 	width: 100%;
 	height: calc(100vh - 72px);
 	position: relative;
-	background-color: #ffc700;
+	background: url("public/rightSide.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	overflow: hidden;
 	font-size: 13.31px;
 	color: #000;
@@ -1132,7 +1135,8 @@ body {
 .box1 {
 	border-radius: 14px;
 	background-color: #fff;
-	box-shadow: 5px 5px 0#000, 4px 4px 0#000, 3px 3px 0#000, 2px 2px 0#000,1px 1px 0#000;
+	box-shadow: 5px 5px 0#000, 4px 4px 0#000, 3px 3px 0#000, 2px 2px 0#000,
+		1px 1px 0#000;
 	border: 4px solid #000;
 	flex-direction: row;
 	padding: 10px;
@@ -1144,7 +1148,8 @@ body {
 .box {
 	border-radius: 14px;
 	background-color: #fff;
-	box-shadow: 5px 5px 0#000, 4px 4px 0#000, 3px 3px 0#000, 2px 2px 0#000,1px 1px 0#000;
+	box-shadow: 5px 5px 0#000, 4px 4px 0#000, 3px 3px 0#000, 2px 2px 0#000,
+		1px 1px 0#000;
 	border: 4px solid #000;
 	flex-direction: row;
 	padding: 10px;
@@ -1186,15 +1191,14 @@ body {
 	display: inline-block;
 	color: #000;
 }
-.crew{
-	font-size:20px;
+.crew {
+	font-size: 20px;
 	position: relative;
 	letter-spacing: 0.02em;
 	line-height: 150%;
 	display: inline-block;
-	color: #000;	
+	color: #000;
 }
-
 
 .content1 {
 	align-self: stretch;
@@ -2023,7 +2027,7 @@ body {
 	color: #000;
 }
 .deeper-dive {
-	font-weight: 800 ;
+	font-weight: 800;
 	color: #ffc700;
 }
 .take-a-deeper-container {
@@ -2131,8 +2135,6 @@ body {
 	color: #000;
 	cursor: pointer;
 	transform: scale(1.03);
-	
-	
 }
 .webinar:hover {
 	background-color: #ffc700;
