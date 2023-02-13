@@ -5,10 +5,11 @@ body {
 }
 
 * {
-	color: #fff;
+	/* color: #fff; */
 	font-family: Syne;
 	box-sizing: border-box;
 }
+
 
 .navigation {
 	background-color: #fff;
@@ -1145,6 +1146,7 @@ body {
 	gap: 10px;
 	z-index: 0;
 	max-width: 75rem;
+	height: 25rem;
 }
 .box {
 	border-radius: 14px;
@@ -1158,6 +1160,7 @@ body {
 	gap: 10px;
 	z-index: 0;
 	max-width: 75rem;
+	height: 25rem;
 }
 .line-icon1 {
 	position: absolute;
